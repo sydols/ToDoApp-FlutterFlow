@@ -46,6 +46,8 @@ class _DetailsWidgetState extends State<DetailsWidget> {
       'details',
     ));
     _model.detailFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
